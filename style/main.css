@@ -1,0 +1,173 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);;
+    position: relative;
+    width: 100%;   
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family:cursive;
+    font-size:40px;
+    cursor: pointer;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-left: 30px;
+}
+
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)), url('../img/capa-casamento-as-cegas-brasil.jpg');
+    background-repeat: no-repeat;
+    height: 800px;
+    background-size: cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 20px;
+    color: white;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    font-size: 14px;
+    color:black;
+    transition: .4s;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    max-width: 250px;
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+nav .ver-tudo{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+}
+
+nav .ver-tudo:hover{
+    color: bisque;
+    font-size: 22px;
+    transition: 0.2s;
+}
+
+div .icone{
+    margin-right: 2%;
+    display: flex;
+    flex: content;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.icone button{
+    background: none;
+    border: none;
+}
+
+.icone i{
+    background-color: var(--preta);
+    background: none;
+    color: white;
+
+    padding:15px 30px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.icone i:hover{
+    background: none;
+    font-size: 18px;
+    transition: .4s;
+}
+
+.container {
+    padding-left: 20px;
+}
+
+.container .barra-destaque{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.carrosel-filmes .item {
+    width: auto;
+}
+
+
+
+
